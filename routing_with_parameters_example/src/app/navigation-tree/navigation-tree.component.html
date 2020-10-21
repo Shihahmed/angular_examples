@@ -1,0 +1,16 @@
+<ul class="tree" *ngFor="let group of this.groups">
+  <div>
+    <li> {{group.name}} </li>
+    <div *ngFor="let report of group.reports">
+      <!--<li> {{report.name}} </li>-->
+
+
+      <li class="nav-item" [routerLinkActive]="['link-active']">
+        <a class="nav-link text-dark" routerLink="/home/report/{{group.id}}/{{report.id}}"> {{report.name}} </a>
+      </li>
+
+<!--
+      <button (click)="this.gotoItems(group.id,report.id)"> {{report.name}} </button> -->
+    </div>
+  </div>
+</ul>

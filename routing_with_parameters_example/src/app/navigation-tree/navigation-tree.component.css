@@ -1,0 +1,15 @@
+ul {
+  list-style-type: none;
+
+}
+
+
+.tree > div{
+  background-color: rgb(240, 175, 175);
+}
+
+.tree > div > div{
+  margin-left: 10px;
+}
+
+
